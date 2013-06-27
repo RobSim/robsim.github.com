@@ -6,9 +6,9 @@
 <meta name="description" content="Rob Sim. UI/UX Designer and front-end developer.">
 <meta name="author" content="Rob Sim">
 <meta name="keywords" content="rob sim, rob, sim, designer, design, responsive, front-end, developer">
- 
+
 <!-- Title -->
- <title>Rob Sim</title>
+ <title>Rob Sim | UI & UX Designer</title>
 
 <!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,30 +21,72 @@
 
 <!-- Body Content -->
 <body>
-	<header>
-		<h1 id="robsim">Thank you!</h1>
-	</header>
+    <section id="about">
+        <div class="width">
+            <p>
+                Thank you for contacting me! I'll get back to you as soon as humanly possible! While you're waiting, you can find some of my shots on <a class="dribbble" href="http://dribbble.com/RobSim">dribbble</a>, and I occasionally <a class="blog" href="http://blog.robs.im">blog</a>. You can also <a class="contact" href="/">return to the homepage</a> if you'd like!
+            </p>
+        </div>
+    </section>
+    <section id="contact">
+        <a id="contact"></a>
+            <div class="width">
+                <script src="js/jotform.js?v=3.1.2513" type="text/javascript"></script>
+                        <form class="jotform-form" action="http://submit.jotform.ca/submit.php" method="post" name="form_30918782421254" id="30918782421254" accept-charset="utf-8">
+                            <input type="hidden" name="formID" value="30918782421254" />
 
-	<section id="about">
-		<div class="width">
-			<p>
-				Thank you for contacting me! I'll get back to you as soon as humanly possible! While you're waiting you can check out my <a class="dribbble" href="http://dribbble.com/RobSim">dribbble</a> profile or my<a class="blog" href="http://blog.robs.im">blog</a>! Thanks again, and I look forward to getting to know you!
-			</p>
-		</div>
-	</section>
+                            <input type="text" class=" form-textname" name="q5_name" placeholder="Name" />
+                            <input type="email" class=" form-textemail validate[required, Email]" name="q4_email4" size="30" placeholder="Email" required/>
+                            <textarea id="input_6" class="form-textarea" name="q6_message" cols="40" rows="6"placeholder="Message"></textarea>
+                            <button id="input_2" type="submit" class="submit">
+                                    Send your message!
+                            </button>
+                            <input type="hidden" id="simple_spc" name="simple_spc" value="30918782421254" />
 
-		<section id="latest3">
-		<div class="width">
-		<img src="images/accclaim.png" alt="Dribbble iOS Mockup" class="img-center">
-		</div>
-	</section>
+                            <script type="text/javascript">
+                                document.getElementById("si" + "mple" + "_spc").value = "30918782421254-30918782421254";
+                            </script>
+                        </form>
+            </div>
+    </section>
+    <section id="portfolio">
+    <ul>
+<!--        <li><a href="htt"><img src="/images/acccla.im.png"></a></li>
+ -->        <li><a href="http://nike.com"><img src="/images/nike-ad.png"></a></li>
+        <li><a href="http://dynamatik.com"><img src="/images/ycr.png"></a></li>
+    </ul>
 
-	<section id="latest2">
-		<div class="width">
-		<img src="images/ycr3.png" alt="Your Career Revolution Homepage" class="img-center">
-		</div>
-	</section>
+    <ul id="dribbble"></ul>
+    <script src="/js/jribbble.js"></script>
+    <script>
+        var callback = function (playerShots) {
+            var html = '';
+
+            playerShots.shots.forEach(function (shot) {
+                   html += '<li>';
+                html += '<a href="' + shot.url + '">';
+                html += '<img src="' + shot.image_url + '" ';
+                html += 'alt="' + shot.title + '"></a></li>';
+            });
+
+            document.getElementById('dribbble').innerHTML = html;
+        };
+
+        jribbble.getShotsByPlayerId('RobSim', callback, {page: 1, per_page: 7});
+    </script>
+    </section>
+
+<!-- <footer id="foot">
+        <div class="cont">
+            <p>Handmade by Rob Sim. To see more of my work and specific case studies please <a href="mailto:me@robs.im">email me</a>.  Written and coded in <a href="http://www.sublimetext.com/">Sublime Text</a> and <a href="http://www.iawriter.com/">iA Writer</a>. Precompiled using <a href="http://sass-lang.com/">SASS</a> with <a href="http://incident57.com/codekit/">CodeKit</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Set in <a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a>.
+            </p>
+        </div>
+    </footer> -->
+
+<!-- Analytics -->
 <script type="text/javascript">
   var analytics=analytics||[];analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);var r=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}},i=["identify","track","trackLink","trackForm","trackClick","trackSubmit","pageview","ab","alias","ready"];for(var s=0;s<i.length;s++)analytics[i[s]]=r(i[s])};
   analytics.load("k4v2jezhmo");
 </script>
+</body>
+</html>

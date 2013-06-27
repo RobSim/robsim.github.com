@@ -1,32 +1,28 @@
 //MIXINS
-@mixin screen($res-min, $res-max)
-{
-  @media screen and ( min-width: $res-min ) and ( max-width: $res-max )
-  {
-    @content;
-  }
+
+@mixin screen($res-min, $res-max) {
+    @media screen and (min-width: $res-min) and (max-width: $res-max) {
+        @content;
+    }
 }
 
-@mixin min-screen($res)
-{
-  @media screen and ( min-width: $res )
-  {
-    @content;
-  }
+@mixin min-screen($res) {
+    @media screen and (min-width: $res) {
+        @content;
+    }
 }
 
-@mixin max-screen($res)
-{
-  @media screen and ( max-width: $res )
-  {
-    @content;
-  }
+@mixin max-screen($res) {
+    @media screen and (max-width: $res) {
+        @content;
+    }
 }
 
-//Responsive Images 
+//Responsive Images
 img {
     max-width: 100%;
-    width: auto\9; /*iefix*/
+    width: auto\9;
+    /*iefix*/
     height: auto;
     vertical-align: middle;
     border: 0;

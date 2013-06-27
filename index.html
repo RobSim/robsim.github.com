@@ -6,7 +6,7 @@
 <meta name="description" content="Rob Sim. UI/UX Designer and front-end developer.">
 <meta name="author" content="Rob Sim">
 <meta name="keywords" content="rob sim, rob, sim, designer, design, responsive, front-end, developer">
- 
+
 <!-- Title -->
  <title>Rob Sim | UI & UX Designer</title>
 
@@ -21,10 +21,6 @@
 
 <!-- Body Content -->
 <body>
-	<header>
-		<h1 id="robsim">Rob Sim</h1>
-	</header>
-
 	<section id="about">
 		<div class="width">
 			<p>
@@ -32,14 +28,13 @@
 			</p>
 		</div>
 	</section>
-
 	<section id="contact">
 		<a id="contact"></a>
 			<div class="width">
 				<script src="js/jotform.js?v=3.1.2513" type="text/javascript"></script>
 						<form class="jotform-form" action="http://submit.jotform.ca/submit.php" method="post" name="form_30918782421254" id="30918782421254" accept-charset="utf-8">
 							<input type="hidden" name="formID" value="30918782421254" />
-						<!-- Form Content -->					
+
 							<input type="text" class=" form-textname" name="q5_name" placeholder="Name" />
 							<input type="email" class=" form-textemail validate[required, Email]" name="q4_email4" size="30" placeholder="Email" required/>
 							<textarea id="input_6" class="form-textarea" name="q6_message" cols="40" rows="6"placeholder="Message"></textarea>
@@ -47,42 +42,46 @@
 					       			Send your message!
 							</button>
 					  		<input type="hidden" id="simple_spc" name="simple_spc" value="30918782421254" />
-						<!-- End Form Content -->	 
+
 					 		<script type="text/javascript">
 					  			document.getElementById("si" + "mple" + "_spc").value = "30918782421254-30918782421254";
 					  		</script>
 						</form>
 			</div>
 	</section>
+	<section id="portfolio">
+	<ul>
+<!-- 		<li><a href="htt"><img src="/images/acccla.im.png"></a></li>
+ -->		<li><a href="http://nike.com"><img src="/images/nike-ad.png"></a></li>
+		<li><a href="http://dynamatik.com"><img src="/images/ycr.png"></a></li>
+	</ul>
 
+	<ul id="dribbble"></ul>
+	<script src="/js/jribbble.js"></script>
+	<script>
+	    var callback = function (playerShots) {
+	        var html = '';
 
-	<section id="latest3">
-		<div class="width">
-		<img src="images/accclaim.png" alt="Dribbble iOS Mockup" class="img-center">
-		</div>
+	        playerShots.shots.forEach(function (shot) {
+	        	   html += '<li>';
+	            html += '<a href="' + shot.url + '">';
+	            html += '<img src="' + shot.image_url + '" ';
+	            html += 'alt="' + shot.title + '"></a></li>';
+	        });
+
+	        document.getElementById('dribbble').innerHTML = html;
+	    };
+
+	    jribbble.getShotsByPlayerId('RobSim', callback, {page: 1, per_page: 7});
+	</script>
 	</section>
 
-	<section id="latest2">
-		<div class="width">
-		<img src="images/ycr3.png" alt="Your Career Revolution Homepage" class="img-center">
-		</div>
-	</section>
-
-<!-- 	<section id="latest1">
-		<div class="width">
-		<img src="images/iTunesArtwork.png" alt="iOS 7 Icon Kit" class="img-center">
-		</div>
-	</section> -->
-
-	<footer id="foot">
+<!-- <footer id="foot">
 		<div class="cont">
-			
-			<p>Handmade by Rob Sim. To see more of my work and specific case studies please <a href="mailto:me@robs.im">email me</a>. <!-- Handmade by <a href="mailto:me@robs.im">Rob Sim</a>. --> Written and coded in <a href="http://www.sublimetext.com/">Sublime Text</a> and <a href="http://www.iawriter.com/">iA Writer</a>. Precompiled using <a href="http://sass-lang.com/">SASS</a> with <a href="http://incident57.com/codekit/">CodeKit</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Set in <a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a>.
-
+			<p>Handmade by Rob Sim. To see more of my work and specific case studies please <a href="mailto:me@robs.im">email me</a>.  Written and coded in <a href="http://www.sublimetext.com/">Sublime Text</a> and <a href="http://www.iawriter.com/">iA Writer</a>. Precompiled using <a href="http://sass-lang.com/">SASS</a> with <a href="http://incident57.com/codekit/">CodeKit</a>. Hosted on <a href="http://pages.github.com/">GitHub Pages</a>. Set in <a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a>.
 			</p>
 		</div>
-
-	</footer>
+	</footer> -->
 
 <!-- Analytics -->
 <script type="text/javascript">
