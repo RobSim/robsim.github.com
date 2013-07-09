@@ -172,6 +172,34 @@ body {
   margin: 0 auto;
   display: block; }
 
+header {
+  padding: 50px;
+  background: #FEFEFE; }
+  header .logo {
+    width: 100px;
+    margin: 0 auto;
+    display: block; }
+  header .logo-top, header .logo-bottom, header .logo {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  header .logo-top {
+    margin-left: -16.52893px; }
+  header .logo-top:hover {
+    -moz-transform: translateX(4px) translateY(-10px);
+    -webkit-transform: translateX(4px) translateY(-10px);
+    -o-transform: translateX(4px) translateY(-10px);
+    -ms-transform: translateX(4px) translateY(-10px);
+    transform: translateX(4px) translateY(-10px); }
+  header .logo-bottom:hover {
+    -moz-transform: translateX(-4px) translateY(10px);
+    -webkit-transform: translateX(-4px) translateY(10px);
+    -o-transform: translateX(-4px) translateY(10px);
+    -ms-transform: translateX(-4px) translateY(10px);
+    transform: translateX(-4px) translateY(10px); }
+
 section#about {
   background: #eff2f2;
   padding: 78px 0 78px 0;

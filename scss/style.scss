@@ -31,6 +31,56 @@ body {
     margin: 0 auto;
     display: block;
 }
+header {
+    $logo-width: 100px;
+    $logo-adjust: $logo-width/6.05;
+    padding: 50px;
+    background: #FEFEFE;
+    & .logo {
+        width: $logo-width;
+        margin: 0 auto;
+        display: block;
+
+        // What is hidden behind "the lid" of the top of the logo
+        // background: url(http://api.ning.com/files/J*NuUgtTftTdLQex6D0XrXgc6G0lOGPl5LKEONfEZIGQgHUoKEcsfgr-2I8vgGplPOwUuX4gn41y35-X6aTNZw54mVMF02wI/hi.gif) no-repeat;
+        // background-size: 40px 40px;
+        // background-position: 20px 20px;
+    }
+    & .logo:hover {
+    }
+    & .logo-top, .logo-bottom, .logo {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    & .logo-top {
+        margin-left: -$logo-adjust;
+    }
+    & .logo-top:hover {
+        -moz-transform: translateX(4px) translateY(-10px);
+        -webkit-transform: translateX(4px) translateY(-10px);
+        -o-transform: translateX(4px) translateY(-10px);
+        -ms-transform: translateX(4px) translateY(-10px);
+        transform: translateX(4px) translateY(-10px);
+
+        // Opening "the lid" of the top of the logo.
+        // -moz-transform: translateX(-43px) translateY(36px) rotate(-60deg);
+        // -webkit-transform: translateX(-43px) translateY(36px) rotate(-60deg);
+        // -o-transform: translateX(-43px) translateY(36px) rotate(-60deg);
+        // -ms-transform: translateX(-43px) translateY(36px) rotate(-60deg);
+        // transform: translateX(-43px) translateY(36px) rotate(-60deg);
+    }
+    & .logo-bottom:hover {
+        -moz-transform: translateX(-4px) translateY(10px);
+        -webkit-transform: translateX(-4px) translateY(10px);
+        -o-transform: translateX(-4px) translateY(10px);
+        -ms-transform: translateX(-4px) translateY(10px);
+        transform: translateX(-4px) translateY(10px);
+    }
+}
+
 section#about {
     background: $about-color;
     padding: $section-padding;
