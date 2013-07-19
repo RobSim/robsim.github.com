@@ -172,34 +172,6 @@ body {
   margin: 0 auto;
   display: block; }
 
-header {
-  padding: 50px;
-  background: #FEFEFE; }
-  header .logo {
-    width: 100px;
-    margin: 0 auto;
-    display: block; }
-  header .logo-top, header .logo-bottom, header .logo {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  header .logo-top {
-    margin-left: -16.52893px; }
-  header .logo-top:hover {
-    -moz-transform: translateX(4px) translateY(-10px);
-    -webkit-transform: translateX(4px) translateY(-10px);
-    -o-transform: translateX(4px) translateY(-10px);
-    -ms-transform: translateX(4px) translateY(-10px);
-    transform: translateX(4px) translateY(-10px); }
-  header .logo-bottom:hover {
-    -moz-transform: translateX(-4px) translateY(10px);
-    -webkit-transform: translateX(-4px) translateY(10px);
-    -o-transform: translateX(-4px) translateY(10px);
-    -ms-transform: translateX(-4px) translateY(10px);
-    transform: translateX(-4px) translateY(10px); }
-
 section#about {
   background: #eff2f2;
   padding: 78px 0 78px 0;
@@ -222,6 +194,8 @@ section#about {
     line-height: 1.7rem;
     font-family: "proxima-nova", sans-serif;
     font-weight: 300; }
+  section#about b {
+    font-weight: 300; }
 
 section#contact {
   padding: 78px 0 78px 0;
@@ -236,6 +210,32 @@ section#contact {
     display: block;
     line-height: 1.9rem;
     text-align: left; }
+
+section#process {
+  background: #888;
+  padding: 78px 0 78px 0;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 300; }
+  section#process .width {
+    max-width: 1200px;
+    margin: 0 auto; }
+    section#process .width .third-left {
+      width: 29.33333%;
+      float: left;
+      padding: 2%; }
+    section#process .width .third-right {
+      width: 29.33333%;
+      margin-left: 66.66667%;
+      padding: 2%; }
+    section#process .width h1 {
+      font-size: 1.3rem;
+      color: #333;
+      text-align: center;
+      font-weight: 400; }
+    section#process .width p {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      color: #333; }
 
 section#portfolio {
   margin: 0; }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400px" height="464px" viewBox="0 0 400 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Browser</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Browser">
+            <g id="Frame Browser">
+                <path d="M0,13.172949 L0,455.17137 C0,459.59052 3.58020589,463.172949 7.99015164,463.172949 L392.009848,463.172949 C396.422687,463.172949 400,459.583556 400,455.17137 L400,13.172949 L0,13.172949 Z M0,13.172949" id="Frame - Border" fill="#2980B9"></path>
+                <path d="M7.99015164,0 C3.57731274,0 0,3.58189046 0,7.99609797 L0,25 L400,25 L400,7.99609797 C400,3.579975 396.419794,0 392.009848,0 L7.99015164,0 Z M7.99015164,0" id="Top Menu - Close - Minimize - Maximize" fill="#F1F1F1"></path>
+                <path d="M15.6962025,19.2527716 C19.3314947,19.2527716 22.278481,16.3039067 22.278481,12.6662971 C22.278481,9.02868752 19.3314947,6.07982262 15.6962025,6.07982262 C12.0609103,6.07982262 9.11392405,9.02868752 9.11392405,12.6662971 C9.11392405,16.3039067 12.0609103,19.2527716 15.6962025,19.2527716 Z M15.6962025,19.2527716" id="Close" fill="#DF6963"></path>
+                <path d="M36.9620253,19.2527716 C40.5973175,19.2527716 43.5443038,16.3039067 43.5443038,12.6662971 C43.5443038,9.02868752 40.5973175,6.07982262 36.9620253,6.07982262 C33.3267331,6.07982262 30.3797468,9.02868752 30.3797468,12.6662971 C30.3797468,16.3039067 33.3267331,19.2527716 36.9620253,19.2527716 Z M36.9620253,19.2527716" id="Minimize" fill="#F5E18A"></path>
+                <path d="M58.2278481,19.2527716 C61.8631403,19.2527716 64.8101266,16.3039067 64.8101266,12.6662971 C64.8101266,9.02868752 61.8631403,6.07982262 58.2278481,6.07982262 C54.5925559,6.07982262 51.6455696,9.02868752 51.6455696,12.6662971 C51.6455696,16.3039067 54.5925559,19.2527716 58.2278481,19.2527716 Z M58.2278481,19.2527716" id="Maximize" fill="#97C38A"></path>
+            </g>
+            <g transform="translate(0.000000, 25.000000)">
+                <path d="M0,0 L0,126 L400,126 L400,0 L0,0 Z M0,0" id="Rectangle 53" fill="#34495E"></path>
+                <path d="M227,30 L227,126 L387,126 L387,30 L227,30 Z M227,30" id="Rectangle 58" fill="#E74C3C"></path>
+                <path d="M14,154 L14,218 L116,218 L116,154 L14,154 Z M14,154" id="Rectangle 58 copy" fill="#E74C3C"></path>
+                <path d="M14,254 L14,318 L116,318 L116,254 L14,254 Z M14,254" id="Rectangle 58 copy 2" fill="#E74C3C"></path>
+                <path d="M14,354 L14,418 L116,418 L116,354 L14,354 Z M14,354" id="Rectangle 58 copy 3" fill="#E74C3C"></path>
+                <path d="M14,30 L14,50 L141,50 L141,30 L14,30 Z M14,30" id="Text ^" fill="#ECF0F1"></path>
+                <path d="M14,63 L14,73 L184,73 L184,63 L14,63 Z M14,63" id="Rectangle 55" fill="#ECF0F1"></path>
+                <path d="M126,163 L126,173 L387,173 L387,163 L126,163 Z M126,163" id="Rectangle 55 copy 3" fill="#ECF0F1"></path>
+                <path d="M126,181 L126,191 L387,191 L387,181 L126,181 Z M126,181" id="Rectangle 55 copy 4" fill="#ECF0F1"></path>
+                <path d="M126,199 L126,209 L387,209 L387,199 L126,199 Z M126,199" id="Rectangle 55 copy 5" fill="#ECF0F1"></path>
+                <path d="M14,83 L14,93 L184,93 L184,83 L14,83 Z M14,83" id="Rectangle 55 copy" fill="#ECF0F1"></path>
+                <path d="M14,103 L14,113 L184,113 L184,103 L14,103 Z M14,103" id="Rectangle 55 copy 2" fill="#ECF0F1"></path>
+                <path d="M126,263 L126,273 L387,273 L387,263 L126,263 Z M126,263" id="Rectangle 55 copy 4" fill="#ECF0F1"></path>
+                <path d="M126,281 L126,291 L387,291 L387,281 L126,281 Z M126,281" id="Rectangle 55 copy 5" fill="#ECF0F1"></path>
+                <path d="M126,299 L126,309 L387,309 L387,299 L126,299 Z M126,299" id="Rectangle 55 copy 6" fill="#ECF0F1"></path>
+                <path d="M126,363 L126,373 L387,373 L387,363 L126,363 Z M126,363" id="Rectangle 55 copy 5" fill="#ECF0F1"></path>
+                <path d="M126,381 L126,391 L387,391 L387,381 L126,381 Z M126,381" id="Rectangle 55 copy 6" fill="#ECF0F1"></path>
+                <path d="M126,399 L126,409 L387,409 L387,399 L126,399 Z M126,399" id="Rectangle 55 copy 7" fill="#ECF0F1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
