@@ -1,0 +1,1 @@
+(function(){var e=document.body,n=document.getElementsByClassName("modal"),a=e.getElementsByClassName("modal")[0];"undefined"!=typeof a&&a.addEventListener("click",function(){n.className="hidden"===n.className?"":"hidden"})}).call(this);

@@ -1,6 +1,8 @@
 @import "base";
 @import "variables";
+@import "modal";
 @import "contact";
+@import "effects";
 
 section,
 header,
@@ -31,55 +33,24 @@ body {
     margin: 0 auto;
     display: block;
 }
-// header {
-//     $logo-width: 100px;
-//     $logo-adjust: $logo-width/6.05;
-//     padding: 50px;
-//     background: #FEFEFE;
-//     & .logo {
-//         width: $logo-width;
-//         margin: 0 auto;
-//         display: block;
-
-//         // What is hidden behind "the lid" of the top of the logo
-//         // background: url(http://api.ning.com/files/J*NuUgtTftTdLQex6D0XrXgc6G0lOGPl5LKEONfEZIGQgHUoKEcsfgr-2I8vgGplPOwUuX4gn41y35-X6aTNZw54mVMF02wI/hi.gif) no-repeat;
-//         // background-size: 40px 40px;
-//         // background-position: 20px 20px;
-//     }
-//     & .logo:hover {
-//     }
-//     & .logo-top, .logo-bottom, .logo {
-//         -webkit-transition: all 0.3s ease-in-out;
-//         -moz-transition: all 0.3s ease-in-out;
-//         -ms-transition: all 0.3s ease-in-out;
-//         -o-transition: all 0.3s ease-in-out;
-//         transition: all 0.3s ease-in-out;
-//     }
-//     & .logo-top {
-//         margin-left: -$logo-adjust;
-//     }
-//     & .logo-top:hover {
-//         -moz-transform: translateX(4px) translateY(-10px);
-//         -webkit-transform: translateX(4px) translateY(-10px);
-//         -o-transform: translateX(4px) translateY(-10px);
-//         -ms-transform: translateX(4px) translateY(-10px);
-//         transform: translateX(4px) translateY(-10px);
-
-//         // Opening "the lid" of the top of the logo.
-//         // -moz-transform: translateX(-43px) translateY(36px) rotate(-60deg);
-//         // -webkit-transform: translateX(-43px) translateY(36px) rotate(-60deg);
-//         // -o-transform: translateX(-43px) translateY(36px) rotate(-60deg);
-//         // -ms-transform: translateX(-43px) translateY(36px) rotate(-60deg);
-//         // transform: translateX(-43px) translateY(36px) rotate(-60deg);
-//     }
-//     & .logo-bottom:hover {
-//         -moz-transform: translateX(-4px) translateY(10px);
-//         -webkit-transform: translateX(-4px) translateY(10px);
-//         -o-transform: translateX(-4px) translateY(10px);
-//         -ms-transform: translateX(-4px) translateY(10px);
-//         transform: translateX(-4px) translateY(10px);
-//     }
-// }
+header {
+    $logo-width: 100px;
+    $logo-adjust: $logo-width/6.05;
+    padding: 50px;
+    background: #FEFEFE;
+        & .name {
+            margin: 0 auto;
+            display: block;
+            & h1 {
+                color: #444;
+                font-size: 8.0rem;
+                text-align: center;
+                line-height: 7rem;
+                font-family: $font, sans-serif;
+                font-weight: 700;
+            }
+        }
+}
 
 section#about {
     background: $about-color;
@@ -101,6 +72,10 @@ section#about {
     & .blog {
         color: $blog;
     }
+    & .form {
+        color: $rebelempire;
+        cursor: pointer;
+    }
     & p {
         font-size: 1.3rem;
         text-align: left;
@@ -112,6 +87,58 @@ section#about {
         font-weight: 300;
     }
 }
+section#latest1, section#latest2, section#latest3 {
+    padding: $section-padding;
+    // & .width {
+    //     max-width: $section-width;
+    //     margin: 0 auto;
+    //     padding: $content-padding;
+    // }
+    $threetenpad: 3%;
+    $threetenwidth: 30% - (2*$threetenpad);
+    $seventenpadpad: 3%;
+    $seventenpadwidth: 70% - (2*$seventenpadpad);
+    & .three-ten {
+        width: $threetenwidth;
+        padding: $threetenpad;
+        float: left;
+    }
+    & .seven-ten {
+        width: $seventenpadwidth;
+        padding: $seventenpadpad;
+        float: right;
+    }
+    section#devices {
+        & img {
+            float: left;
+        }
+    }
+
+    & h1 {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 1.45rem;
+        text-align: center;
+        margin-bottom: 0px;
+        font-weight: 300;
+    }
+    & h2 {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 1.05rem;
+        text-align: center;
+        margin-bottom: 12px;
+        margin-top: 0px;
+        font-weight: 300;
+    }
+    & p {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 1.05rem;
+        margin-top: 3px;
+    }
+    & a {
+        text-decoration: none;
+    }
+}
+
 section#contact {
     padding: $section-padding;
     background: $contact-color;
@@ -167,6 +194,19 @@ section#process {
 }
 section#portfolio {
     margin: 0;
+    padding: 0 0 45px 0;
+    $number-of-elements: 6;
+    & h2 {
+            font-family: $font;
+            font-weight: 300;
+            font-size: 1.9rem;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0 20px 0;
+            background: $latest2-color;
+            color: $latest2-color-dark;
+            margin-bottom: 20px;
+        }
     & ul, li {
         list-style: none;
         -webkit-margin-before: 0em;
@@ -176,7 +216,9 @@ section#portfolio {
     }
     & li {
         @include min-screen (1100px) {
-            width: 33.33333333333333333333333333333%;
+            $li-padding: 2%;
+            padding: $li-padding;
+            width: 33.33333333333333333333333333333% - (2*$li-padding);
         }
         @include screen (600px, 1100px) {
             width: 50%;
@@ -185,31 +227,79 @@ section#portfolio {
             width: 100%;
         }
         float: left;
+        cursor: pointer;
     }
 }
 
 section#blog {
-    background: $latest1-color;
-    padding: $section-padding;
     & .width {
-        max-width: $section-width;
-        margin:0 auto;
-        display: block;
         & ul, li {
             list-style: none;
         }
-        & h1 {
+        & ul {
+            padding: 0;
+            margin: 0;
+        }
+        & h2 {
             font-family: $font;
             font-weight: 300;
             font-size: 1.9rem;
-            padding: 20px 0 0 0;
+            text-align: center;
+            margin: 0;
+            padding: 20px 0 20px 0;
+            color: $latest2-color-dark;
+            &.color{
+                color: $latest3-color-dark;
+                background: $latest3-color;
+                padding: 20px 0 0 0;
+            }
         }
-        & .rss-box {
+        & h4 {
             font-family: $font;
             font-weight: 300;
-            font-size: 1.3rem;
-            line-height: 1.7rem;
-            margin: 10px 0 10px 0;
+            font-size: 1.5rem;
+            padding: 15px 0 0 0;
+        }
+        & p {
+            font-family: $font;
+            font-weight: 300;
+            font-size: 1.1rem;
+            padding: 0 0 15px 0;
+            margin: 0;
+        }
+        & .rssRow {
+            &.odd {
+                background-color: $latest3-color;
+                padding: 15px;
+                & h4, a {
+                    color: $latest3-color-dark;
+                    max-width: $section-width;
+                    margin:0 auto;
+                    display: block;
+                }
+                & p {
+                    color: $latest3-color-light;
+                    max-width: $section-width;
+                    margin:0 auto;
+                    display: block;
+                }
+            }
+            &.even {
+                background-color: $latest3-color;
+                padding: 15px;
+                & h4, a {
+                    color: $latest3-color-dark;
+                    max-width: $section-width;
+                    margin:0 auto;
+                    display: block;
+                }
+                & p {
+                    color: $latest3-color-light;
+                    max-width: $section-width;
+                    margin:0 auto;
+                    display: block;
+                }
+            }
         }
     }
 }
